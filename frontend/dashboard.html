@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Secure Records</title>
+
+    <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+
+            <div>
+                <h2>Secure Records Dashboard</h2>
+                <p id="welcome">Loading user information...</p>
+            </div>
+
+            <button id="logoutBtn">Logout</button>
+
+        </header>
+
+
+        <section class="dashboard-section">
+
+            <h3>Create New Record</h3>
+
+            <form id="recordForm">
+
+                <label>Record Title</label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter record title"
+                    required
+                >
+
+                <label>Record Body</label>
+
+                <textarea
+                    id="body"
+                    placeholder="Enter record details"
+                    required
+                ></textarea>
+
+                <button type="submit">Create Record</button>
+
+            </form>
+
+            <p id="recordMessage"></p>
+
+        </section>
+
+
+        <section class="dashboard-section">
+
+            <h3>Your Records</h3>
+
+            <div id="recordsList">
+                Loading records...
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-section">
+
+            <h3>Record Details</h3>
+
+            <div id="recordDetails">
+                Select a record to view its details.
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/frontend/js/records.js"></script>
+
+</body>
+
+</html>

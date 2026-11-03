@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Secure Records</title>
+
+    <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Create Account</h2>
+
+        <p>Register to access Secure Records API</p>
+
+        <form id="registerForm">
+
+            <label>Username</label>
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                required
+            >
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            Already have an account?
+            <a href="/login-page">Login here</a>
+        </p>
+
+    </div>
+
+    <script src="/frontend/js/auth.js"></script>
+
+</body>
+</html>
